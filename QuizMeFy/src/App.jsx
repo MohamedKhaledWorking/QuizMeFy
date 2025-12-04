@@ -6,6 +6,7 @@ import Layout from "./component/Layout.jsx";
 
 // FIXED IMPORT
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Dashboard from "./component/Dashborad/Dashboard.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -15,6 +16,10 @@ function App() {
         {
           index: true,
           element: <Home />,
+        },
+        {
+          path: "/dashboard",
+          element: <Dashboard />,
         },
       ],
     },

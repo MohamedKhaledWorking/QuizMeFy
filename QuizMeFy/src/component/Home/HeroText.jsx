@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default function HeroText() {
   return (
     <>
-      <div className="w-1/2 h-1/2 flex justify-center items-center flex-col text-center text-capitalize z-10">
+      <div className="w-1/2 h-1/2 flex justify-center items-center flex-col text-center capitalize z-10">
         <div className="border border-white rounded-full px-6 py-2 text-white font-semibold mb-4 w-fit flex ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -13,10 +13,10 @@ export default function HeroText() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-brain-icon lucide-brain"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-brain-icon lucide-brain"
           >
             <path d="M12 18V5" />
             <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" />
