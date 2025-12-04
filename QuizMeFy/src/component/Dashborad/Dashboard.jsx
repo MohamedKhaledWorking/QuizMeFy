@@ -6,6 +6,8 @@ import QuizCard from "./QuizCard.jsx";
 import QuizList from "./QuizList.jsx";
 import Stats from "./Stats.jsx";
 import History from "./History.jsx";
+import Navbar from "../Navbar.jsx";
+import Starter from "../Starter.jsx";
 
 export default function Dashboard() {
   const [quizzes, setQuizzes] = useState([
@@ -78,8 +80,9 @@ export default function Dashboard() {
   ]);
 
   return (
-    <div className="bg-main h-screen pt-20 px-4 capitalize">
-      <div className="container  mx-auto flex flex-col items-center">
+    <div className="bg-main h-screen pt-20 px-4 capitalize ">
+      <Navbar />
+      <div className="container  mx-auto flex flex-col items-center mt-24">
         <DashboardText />
         <div className="flex w-full h-96 mt-10">
           <div className="w-3/4  px-4 ">

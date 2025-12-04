@@ -1,5 +1,6 @@
 import React from "react";
 import QuestionsAndTime from "./QuestionsAndTime.jsx";
+import { Link } from "react-router";
 
 export default function QuizCard({
   title,
@@ -20,7 +21,10 @@ export default function QuizCard({
 
   return (
     <>
-      <div className="pr-3 w-1/3 relative hover:scale-103 duration-300 cursor-pointer mb-6 group">
+      <Link
+        to={"/start"}
+        className="pr-3 w-1/3 relative hover:scale-103 duration-300 cursor-pointer mb-6 group"
+      >
         <div
           className={`absolute top-10 right-7 py-2 px-5 rounded-3xl text-xs text-${defaultDifficultyClass} bg-${defaultDifficultyClass}/30`}
         >
@@ -33,7 +37,9 @@ export default function QuizCard({
             className={`absolute inset-0 opacity-10 transition-opacity duration-300 group-hover:opacity-20 bg-gradient-to-br ${color} rounded-xl `}
           />
           <p className="text-5xl ">{icon}</p>
-          <p className="text-2xl text-white my-4 line-clamp-1 group-hover:text-sky-500 duration-300">{title} </p>
+          <p className="text-2xl text-white my-4 line-clamp-1 group-hover:text-sky-500 duration-300">
+            {title}{" "}
+          </p>
           <p className="text-gray-400 text-sm  mb-4 line-clamp-2 h-10">
             {description}
           </p>
@@ -64,7 +70,7 @@ export default function QuizCard({
             <p className="ml-2">{completedQuizzes} completed</p>
           </div>
         </div>
-      </div>
+      </Link>
     </>
   );
 }

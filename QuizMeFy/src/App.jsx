@@ -7,6 +7,8 @@ import Layout from "./component/Layout.jsx";
 // FIXED IMPORT
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./component/Dashborad/Dashboard.jsx";
+import Starter from "./component/Starter.jsx";
+import Loading from "./component/Loading.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -18,8 +20,12 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/dashboard",
+          path: "dashboard",
           element: <Dashboard />,
+        },
+        {
+          path: "start",
+          element: <Starter />,
         },
       ],
     },
