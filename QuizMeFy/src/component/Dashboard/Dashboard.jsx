@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import DashboardText from "./DashboardText.jsx";
 import Daily from "./Daily.jsx";
-import QuestionsAndTime from "./QuestionsAndTime.jsx";
-import QuizCard from "./QuizCard.jsx";
 import QuizList from "./QuizList.jsx";
 import Stats from "./Stats.jsx";
 import History from "./History.jsx";
 import Navbar from "../Navbar.jsx";
-import Starter from "../Starter.jsx";
 
 export default function Dashboard() {
   const [quizzes, setQuizzes] = useState([

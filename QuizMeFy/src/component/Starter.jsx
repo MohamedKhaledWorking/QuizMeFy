@@ -1,5 +1,5 @@
 import React from "react";
-import QuestionsAndTime from "./Dashborad/QuestionsAndTime.jsx";
+import QuestionsAndTime from "./Dashboard/QuestionsAndTime.jsx";
 import { Link } from "react-router";
 
 export default function Starter() {
