@@ -77,7 +77,7 @@ export default function Dashboard() {
   ]);
 
   return (
-    <div className="bg-main h-screen pt-20 px-4 capitalize ">
+    <div className="bg-main min-h-screen pt-20 px-4 capitalize ">
       <Navbar />
       <div className="container  mx-auto flex flex-col items-center mt-24">
         <DashboardText />

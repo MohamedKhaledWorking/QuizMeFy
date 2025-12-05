@@ -7,6 +7,7 @@ import ErrorMsg from "../ErrorMsg.jsx";
 import Question from "./Question.jsx";
 import Sidebar from "./Sidebar.jsx";
 import SubmitModel from "./SubmitModel.jsx";
+import Result from "../Result/Result.jsx";
 
 const initialState = {
   quiz: {},
@@ -15,7 +16,6 @@ const initialState = {
   errorMsg: "",
   selected: [],
   flagged: [],
-  points: 0,
 };
 
 function reducer(state, action) {
@@ -43,7 +43,6 @@ function reducer(state, action) {
             )
           : [...state.selected, action.payload],
       };
-
     case "deSelectAnswer":
       return {
         ...state,
@@ -51,7 +50,6 @@ function reducer(state, action) {
           (item) => item.questionIdx !== action.payload.questionIdx
         ),
       };
-
     case "setFlagged":
       return { ...state, flagged: [...state.flagged, action.payload] };
     case "removeFlagged":
@@ -59,10 +57,14 @@ function reducer(state, action) {
         ...state,
         flagged: state.flagged.filter((item) => item != action.payload),
       };
+    case "retry":
+      return { ...initialState, status: "quizReceived" , quiz: state.quiz};
+    case "submitting":
+      return { ...state, status: "submitting" };
+    case "cancel":
+      return { ...state, status: "quizReceived"};
     case "finished":
       return { ...state, status: "finished" };
-    case "cancel":
-      return { ...state, status: "quizReceived" };
   }
 }
 
@@ -88,11 +90,12 @@ export default function Exam() {
   if (status == "error") {
     return <ErrorMsg ErrorMsg={state.errorMsg} />;
   }
+
   if (status == "loading") {
     return <Loading />;
   }
 
-  if (status == "finished") {
+  if (status == "submitting") {
     return (
       <SubmitModel
         dispatch={dispatch}
@@ -102,8 +105,12 @@ export default function Exam() {
     );
   }
 
+  if (status == "finished") {
+    return <Result dispatch={dispatch} selected={state.selected} quiz={quiz} />;
+  }
+
   return (
-    <div className="w-screen h-screen bg-main text-white capitalize">
+    <div className="w-screen min-h-screen bg-main text-white capitalize">
       <div className="container mx-auto  h-full py-8">
         <QuizHeader quiz={quiz} />
         <div className="flex flex-col">

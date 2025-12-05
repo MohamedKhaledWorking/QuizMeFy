@@ -30,7 +30,7 @@ export default function Sidebar({
       </div>
 
       <button
-        onClick={() => dispatch({ type: "finished" })}
+        onClick={() => dispatch({ type: "submitting" })}
         className="flex border border-gray-500/20 items-center justify-center mt-8 rounded-xl px-12 space-x-4 p-4 w-full cursor-pointer hover:bg-sec duration-300 hover:scale-105 hover:text-teal-500 hover:border-teal-500"
       >
         <Send /> <p> Submit Quiz</p>

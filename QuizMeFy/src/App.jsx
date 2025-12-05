@@ -7,6 +7,7 @@ import Exam from "./component/Question/Exam.jsx";
 import Notfound from "./component/Notfound.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Result from "./component/Result/Result.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "quiz",
         element: <Exam />,
+      },
+      {
+        path: "result",
+        element: <Result />,
       },
       {
         path: "*",

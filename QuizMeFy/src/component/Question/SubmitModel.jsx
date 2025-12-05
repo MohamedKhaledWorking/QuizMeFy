@@ -16,7 +16,10 @@ export default function SubmitModel({ dispatch, selected, questions }) {
         )}
         <p className="my-3 text-rose-500">once you submit you can't go back</p>
 
-        <button className="bg-teal-500 text-white px-12 py-3 text-xl capitalize rounded-lg hover:bg-teal-600 duration-300 my-4 w-full cursor-pointer">
+        <button
+          className="bg-teal-500 text-white px-12 py-3 text-xl capitalize rounded-lg hover:bg-teal-600 duration-300 my-4 w-full cursor-pointer"
+          onClick={() => dispatch({ type: "finished" })}
+        >
           Submit
         </button>
         <button

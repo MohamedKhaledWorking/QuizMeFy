@@ -11,7 +11,6 @@ export default function Question({
   flagged,
 }) {
   const isFlagged = flagged.some((item) => item == questionIdx);
-  console.log(isFlagged);
   return (
     <div className="w-9/12 px-3 py-4 ">
       <div className="bg-sec px-8 py-10 rounded-3xl border border-gray-400/10">
