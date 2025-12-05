@@ -1,9 +1,11 @@
+import { Brain } from "lucide-react";
 import React from "react";
 
 export default function DashboardText() {
   return (
     <>
       <div className=" rounded-full px-6 py-2 text-teal-500 bg-teal-800/40 font-semibold mb-4 w-fit flex mb-8">
+        {/* <Brain /> */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

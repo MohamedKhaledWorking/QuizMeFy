@@ -1,3 +1,4 @@
+import { Award, ChartSpline, Flame, Radar, Star } from "lucide-react";
 import React, { useState } from "react";
 
 export default function Stats() {
@@ -11,6 +12,7 @@ export default function Stats() {
     <>
       <div className="border border-gray-400/20 bg-sec px-4 py-6 rounded-lg  ">
         <div className="flex items-center space-x-3 text-teal-500 ">
+          {/* <ChartSpline /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -31,6 +33,7 @@ export default function Stats() {
         <div className="flex justify-between flex-wrap items-center mt-4 pb-8">
           <div className="w-1/2  flex justify-center items-center mt-8">
             <div className="w-10 h-10 rounded-full bg-teal-500/20 text-teal-500 flex items-center justify-center">
+              {/* <Award /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -58,6 +61,7 @@ export default function Stats() {
           </div>
           <div className="w-1/2  flex justify-center items-center mt-8">
             <div className="w-10 h-10 rounded-full bg-green-500/20 text-green-500 flex items-center justify-center">
+              {/* <Radar /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -91,6 +95,7 @@ export default function Stats() {
           </div>
           <div className="w-1/2  flex justify-center items-center mt-8">
             <div className="w-10 h-10 rounded-full bg-rose-500/20 text-rose-500 flex items-center justify-center">
+              {/* <Flame /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -117,6 +122,7 @@ export default function Stats() {
           </div>
           <div className="w-1/2  flex justify-center items-center mt-8">
             <div className="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-500 flex items-center justify-center">
+              {/* <Star /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

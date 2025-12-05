@@ -1,3 +1,4 @@
+import { Brain } from "lucide-react";
 import React from "react";
 import { Link } from "react-router";
 
@@ -6,6 +7,7 @@ export default function HeroText() {
     <>
       <div className="w-1/2 h-1/2 flex justify-center items-center flex-col text-center capitalize z-10">
         <div className="border border-white rounded-full px-6 py-2 text-white font-semibold mb-4 w-fit flex ">
+          {/* <Brain /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

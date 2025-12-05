@@ -1,0 +1,141 @@
+{
+  "quiz": {
+    "quizName": "mathematics",
+    "difficulty": "medium",
+    "time": 8,
+    "length": 10,
+    "totalPoints": 100,
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which is the most popular JavaScript framework?",
+        "options": [
+          { "id": 1, "text": "Angular" },
+          { "id": 2, "text": "React" },
+          { "id": 3, "text": "Svelte" },
+          { "id": 4, "text": "Vue" }
+        ],
+        "correctOption": 2,
+        "points": 10,
+        "explanation": "React has the largest community, ecosystem, and job demand, making it the most popular JS framework/library today."
+      },
+      {
+        "id": 2,
+        "question": "Which company invented React?",
+        "options": [
+          { "id": 1, "text": "Google" },
+          { "id": 2, "text": "Apple" },
+          { "id": 3, "text": "Netflix" },
+          { "id": 4, "text": "Facebook" }
+        ],
+        "correctOption": 4,
+        "points": 10,
+        "explanation": "React was created at Facebook (now Meta) to solve UI performance issues in their apps like Facebook and Instagram."
+      },
+      {
+        "id": 3,
+        "question": "What's the fundamental building block of React apps?",
+        "options": [
+          { "id": 1, "text": "Components" },
+          { "id": 2, "text": "Blocks" },
+          { "id": 3, "text": "Elements" },
+          { "id": 4, "text": "Effects" }
+        ],
+        "correctOption": 1,
+        "points": 10,
+        "explanation": "React apps are built from components — reusable pieces of UI that manage their own logic and rendering."
+      },
+      {
+        "id": 4,
+        "question": "What's the name of the syntax we use to describe the UI in React components?",
+        "options": [
+          { "id": 1, "text": "FBJ" },
+          { "id": 2, "text": "Babel" },
+          { "id": 3, "text": "JSX" },
+          { "id": 4, "text": "ES2012015" }
+        ],
+        "correctOption": 3,
+        "points": 10,
+        "explanation": "JSX lets you write HTML-like syntax inside JavaScript, making UI easier to build and understand."
+      },
+      {
+        "id": 5,
+        "question": "How does data flow naturally in React apps?",
+        "options": [
+          { "id": 1, "text": "From parents to children" },
+          { "id": 2, "text": "From children to parents" },
+          { "id": 3, "text": "Both ways" },
+          { "id": 4, "text": "The developers decides" }
+        ],
+        "correctOption": 1,
+        "points": 10,
+        "explanation": "React is designed for one-way data flow: parent components pass data down to child components."
+      },
+      {
+        "id": 6,
+        "question": "How to pass data into a child component?",
+        "options": [
+          { "id": 1, "text": "State" },
+          { "id": 2, "text": "Props" },
+          { "id": 3, "text": "PropTypes" },
+          { "id": 4, "text": "Parameters" }
+        ],
+        "correctOption": 2,
+        "points": 10,
+        "explanation": "Props are the mechanism used to pass data from parents to children in React."
+      },
+      {
+        "id": 7,
+        "question": "When to use derived state?",
+        "options": [
+          { "id": 1, "text": "Not triggering a re-render" },
+          { "id": 2, "text": "Synchronizing with an effect" },
+          { "id": 3, "text": "Sharing across components" },
+          { "id": 4, "text": "When it can be computed from other state" }
+        ],
+        "correctOption": 4,
+        "points": 10,
+        "explanation": "Derived state is used when the value can be computed from existing state instead of being stored separately."
+      },
+      {
+        "id": 8,
+        "question": "What triggers a UI re-render in React?",
+        "options": [
+          { "id": 1, "text": "Running an effect" },
+          { "id": 2, "text": "Passing props" },
+          { "id": 3, "text": "Updating state" },
+          { "id": 4, "text": "Adding event listeners" }
+        ],
+        "correctOption": 3,
+        "points": 10,
+        "explanation": "Re-rendering happens whenever state updates, because React needs to recalculate the UI based on the new state."
+      },
+      {
+        "id": 9,
+        "question": "When do we directly \"touch\" the DOM in React?",
+        "options": [
+          { "id": 1, "text": "When listening to events" },
+          { "id": 2, "text": "When changing the UI" },
+          { "id": 3, "text": "When adding styles" },
+          { "id": 4, "text": "Almost never" }
+        ],
+        "correctOption": 4,
+        "points": 10,
+        "explanation": "React abstracts the DOM. Direct manipulation is rare and usually done only with refs."
+      },
+      {
+        "id": 100,
+        "question": "In what situation do we use a callback to update state?",
+        "options": [
+          { "id": 1, "text": "When updating state is slow" },
+          { "id": 2, "text": "When data is large" },
+          { "id": 3, "text": "When updates need to be instant" },
+          { "id": 4, "text": "When new state depends on previous state" }
+        ],
+        "correctOption": 4,
+        "points": 10,
+        "explanation": "Functional updates are used when the new state depends on the previous state."
+      }
+    ]
+  }
+}

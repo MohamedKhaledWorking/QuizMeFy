@@ -1,6 +1,7 @@
 import React from "react";
 import QuestionsAndTime from "./QuestionsAndTime.jsx";
 import { Link } from "react-router";
+import { Trophy } from "lucide-react";
 
 export default function QuizCard({
   title,
@@ -48,6 +49,7 @@ export default function QuizCard({
             time={estimatedTimeMinutes}
           />
           <div className="flex mt-6 text-teal-500">
+            {/* <Trophy /> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

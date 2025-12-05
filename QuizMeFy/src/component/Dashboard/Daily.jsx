@@ -1,5 +1,6 @@
 import React from "react";
 import QuestionsAndTime from "./QuestionsAndTime.jsx";
+import { Sparkles } from "lucide-react";
 
 export default function Daily() {
   return (
@@ -7,6 +8,7 @@ export default function Daily() {
       <p className="text-6xl">🏆</p>
       <div>
         <div className="text-md font-semibold mb-2 text-yellow-500 flex">
+          {/* <Sparkles /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
