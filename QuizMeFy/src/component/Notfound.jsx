@@ -44,7 +44,6 @@ const NotFound = () => {
         />
       </div>
 
-      {/* Grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
@@ -54,7 +53,6 @@ const NotFound = () => {
       />
 
       <div className="relative z-10 px-6 text-center">
-        {/* Animated 404 */}
         <div className="relative mb-8">
           <h1
             className="text-[12rem] font-black leading-none tracking-tighter text-transparent md:text-[16rem]"
@@ -82,7 +80,6 @@ const NotFound = () => {
           </h1>
         </div>
 
-        {/* Animated SVG */}
         <div className="mb-8 flex justify-center">
           <svg
             width="120"
@@ -139,7 +136,6 @@ const NotFound = () => {
           </svg>
         </div>
 
-        {/* Content */}
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-foreground md:text-3xl">
             Oops! Lost in the quiz universe
@@ -155,30 +151,6 @@ const NotFound = () => {
             </code>
           </p>
         </div>
-
-        {/* Action buttons */}
-        {/* <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button
-            onClick={() => navigate("/")}
-            variant="gradient"
-            size="lg"
-            className="group min-w-[180px]"
-          >
-            <Home className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
-            Go Home
-          </Button>
-          <Button
-            onClick={() => navigate(-1)}
-            variant="outline"
-            size="lg"
-            className="min-w-[180px]"
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Go Back
-          </Button>
-        </div> */}
-
-        {/* Quick links */}
         <div className="mt-12 flex items-center justify-center gap-6 text-sm text-muted-foreground">
           <button
             onClick={() => navigate("/")}

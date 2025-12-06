@@ -25,13 +25,11 @@ export default function ScoreRing({ score = 89, size = 380 }) {
         className="relative flex items-center justify-center"
         style={{ width: size, height: size }}
       >
-        {/* colored dot at the top */}
         <div
           className="absolute top-0 left-1/2 -translate-x-1/2  w-3.5 h-3.5 rounded-full"
           style={{ backgroundColor: color }}
         />
 
-        {/* background ring */}
         <svg width={size} height={size}>
           <circle
             stroke="#1e2535"
@@ -43,7 +41,6 @@ export default function ScoreRing({ score = 89, size = 380 }) {
           />
         </svg>
 
-        {/* progress ring */}
         <svg
           className="absolute top-0 left-0"
           width={size}
@@ -64,7 +61,6 @@ export default function ScoreRing({ score = 89, size = 380 }) {
           />
         </svg>
 
-        {/* center text */}
         <div className="absolute text-center">
           <p className="text-3xl font-extrabold" style={{ color }}>
             {clampedScore}%

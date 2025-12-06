@@ -112,12 +112,11 @@ export default function Exam() {
   return (
     <div className="w-screen min-h-screen bg-main text-white capitalize">
       <div className="container mx-auto  h-full py-8">
-        <QuizHeader quiz={quiz} />
+        <QuizHeader quiz={quiz} dispatch={dispatch} />
         <div className="flex flex-col">
           <QuizProgress selected={state.selected} questions={quiz?.questions} />
 
           <div className="flex">
-            {/* question section */}
             <Question
               quiz={quiz}
               key={currentIdx}
@@ -127,7 +126,6 @@ export default function Exam() {
               flagged={state.flagged}
             />
 
-            {/* sidebar section */}
             <Sidebar
               dispatch={dispatch}
               length={quiz?.length}

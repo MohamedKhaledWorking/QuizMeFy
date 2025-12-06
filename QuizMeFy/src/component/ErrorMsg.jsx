@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router";
 
 export default function ErrorMsg({ ErrorMsg }) {
-  console.log(ErrorMsg);
   return (
     <div className="h-screen w-screen flex justify-center items-center bg-main">
       <div className="w-1/4 flex flex-col items-center space-y-4 bg-sec border border-rose-500/10 rounded-lg p-4 py-20">

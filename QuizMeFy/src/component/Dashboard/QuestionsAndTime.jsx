@@ -6,7 +6,6 @@ export default function QuestionsAndTime({ questions, time }) {
     <>
       <div className="flex ">
         <div className="flex items-center mr-4">
-          {/* <ShieldQuestionMarkIcon /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -26,7 +25,6 @@ export default function QuestionsAndTime({ questions, time }) {
           <p className="ml-2">{questions} questions</p>
         </div>
         <div className="flex items-center mr-4">
-          {/* <Clock /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

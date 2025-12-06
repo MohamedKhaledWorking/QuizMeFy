@@ -18,7 +18,6 @@ export default function Loading() {
             strokeLinecap="round"
             strokeLinejoin="round"
           >
-            {/* PATH 3 — Book Outline (draw first, erase last) */}
             <path
               d="M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3"
               strokeDasharray="80"
@@ -34,7 +33,6 @@ export default function Loading() {
               />
             </path>
 
-            {/* PATH 1 — Vertical Line (draw second, erase second) */}
             <path d="M12 21V7" strokeDasharray="20" strokeDashoffset="20">
               <animate
                 attributeName="stroke-dashoffset"
@@ -46,7 +44,6 @@ export default function Loading() {
               />
             </path>
 
-            {/* PATH 2 — Checkmark (draw last, erase first) */}
             <path d="m16 12 2 2 4-4" strokeDasharray="20" strokeDashoffset="0">
               <animate
                 attributeName="stroke-dashoffset"

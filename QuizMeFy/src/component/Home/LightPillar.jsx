@@ -33,7 +33,6 @@ const LightPillar = ({
       canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
     if (!gl) {
       setWebGLSupported(false);
-      console.warn("WebGL is not supported in this browser");
     }
   }, []);
 
@@ -61,7 +60,6 @@ const LightPillar = ({
         depth: false,
       });
     } catch (error) {
-      console.error("Failed to create WebGL renderer:", error);
       setWebGLSupported(false);
       return;
     }

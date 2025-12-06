@@ -5,7 +5,6 @@ export default function History() {
   return (
     <div className="border border-gray-400/20 bg-sec px-4 py-6 rounded-lg mt-8">
       <div className="flex items-center space-x-3 text-sky-500 mb-8">
-        {/* <History /> */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

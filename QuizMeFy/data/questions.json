@@ -2,7 +2,7 @@
   "quiz": {
     "quizName": "mathematics",
     "difficulty": "medium",
-    "time": 8,
+    "time": 1,
     "length": 10,
     "totalPoints": 100,
     "questions": [

@@ -39,7 +39,6 @@ export default function ReviewCard({ question, idx, selected }) {
         })}
       </div>
 
-      {/* Explanation box */}
       <div className="flex items-center border border-teal-500 bg-teal-500/5 text-teal-500 space-x-4 p-4 rounded-2xl">
         <Lightbulb />
         <div>

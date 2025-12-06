@@ -1,7 +1,6 @@
 import React from "react";
 import QuestionsAndTime from "./Dashboard/QuestionsAndTime.jsx";
 import { Link } from "react-router";
-import { BookOpenText, Play } from "lucide-react";
 
 export default function Starter() {
   return (
@@ -27,7 +26,6 @@ export default function Starter() {
             className="block text-center px-12 py-4 rounded-2xl border border-teal-500 capitalize text-teal-500  text-xl hover:scale-105  duration-300 transition-all cursor-pointer"
           >
             <div className="flex  flex items-center justify-center space-x-3">
-              {/* <Play /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -50,7 +48,6 @@ export default function Starter() {
             className="block text-center px-12 py-4 rounded-2xl border border-sky-500 text-sky-500 duration-300 text-xl hover:scale-105  capitalize transition-all cursor-pointer mt-8"
           >
             <div className="flex  flex items-center justify-center space-x-3">
-              {/* <BookOpenText /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
